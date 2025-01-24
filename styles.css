@@ -1,0 +1,125 @@
+﻿/*
+Styles file for the page
+Danny Miller
+CS 385
+Spring 2024
+*/
+
+/* HEADER INFO */
+#header			
+{
+	background-image:url('images/cameraheader.png');
+	background-color: gray;
+	background-repeat:no-repeat;
+	height:258px;
+}
+
+/* STANDARD TEXT INFO */
+h3				/* heading 3, used for the red headings on the page */
+{
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin:20px;
+	color:red;
+}
+
+p				/* standard text */
+{
+	font-family: "Lucida Sans";
+	font-size: small;
+	margin: 20px;
+}
+
+li				/* bulleted list text -- same as <p> */
+{
+	font-family: "Lucida Sans";
+	font-size: small;
+	margin-left: 20px;
+}
+
+#header h1		/* big heading in header */
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 120px;
+	margin-left: 400px;
+}
+
+#header p		/* standard text in the header */
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 400px;
+}
+
+#header h3		/* heading 3 text in the header */
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 400px;
+}
+
+/* FLEX BOX INFO */
+.flex-container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-container > div
+{
+	background-color: white;
+	margin: 16px;
+}
+
+/* MARGIN FOR INPUTS */
+input
+{
+	margin: 20px;
+}
+
+/* class to replicate <p> in <label> */
+.label
+{
+	font-family: "Lucida Sans";
+	font-size: small;
+	margin: 20px;
+}
+
+/* inline buttons */
+.inline
+{
+	display: inline;
+}
+
+#modalMask /* This div will cover the entire screen: 100% width and height, starting at 0, 0. 
+/* When visible, it's sort of grey (#eee), sort of transparent. But initially it's invisible
+so you can see the main text. */
+{
+	display:none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+	background-color: #eee; /* grey */
+	z-index: 1000;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+}
+
+/* popup window */
+#popupWindow
+{
+	position: relative;
+	width: 300px;
+	margin: 15px auto;
+	padding: 15px;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	z-index: 9999;
+}
